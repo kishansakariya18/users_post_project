@@ -55,15 +55,6 @@ app.get("/users/posts", (req, res) => {
       }
     );
   });
-
-  // pool.query(`SELECT U.USERNAME username , P.POST post FROM USERS U INNER JOIN POSTS P ON U.USER_ID = P.USER_ID` , (err , result) =>{
-  //     if(err){
-  //         console.log(err);
-  //     } else{
-  //         // console.log(result);
-  //         return res.render('index.ejs' , { data: result})
-  //     }
-  // })
 });
 
 app.post(
